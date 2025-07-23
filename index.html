@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="this is a  page contains description about my web">
-    <title>about me</title>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>CSS variables</title>
+          <style>
+                    :root{
+                      --color:blue;
+                      --seccolor:rgb(161, 161, 237);
+                      --defpad:23px
+                    }
+                    *{
+                              margin: 0;
+                              padding: 0;
+                    }
+             .nav{
+                    background-color: var(--color);
+             }
+             ul{
+                    display: flex;
+             }
+             ul li{
+                    list-style: none;
+                    padding: var(--defpad);
+                    border: 4px solid var(--seccolor);
+             }
+             ul li:first-child{
+                    background-color: blueviolet;
+             }
+             .container{
+                    background-color:var(--seccolor);
+             }
+             
+          </style>
 </head>
 <body>
-    <h1>d</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, laudantium velit tenetur nemo omnis quasi iure sed odio deleniti est tempore, praesentium provident consequuntur, voluptatem vel laboriosam accusamus hic voluptatum sunt dolorum deserunt. Incidunt reiciendis sunt dolorem. Cumque rem, repellendus mollitia numquam asperiores culpa dolores.</p>
+          <div>
+                <ul class="nav">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+          </div>
+          <div class="container">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officiis veniam dicta ullam ratione placeat fuga nesciunt accusantium nulla delectus itaque aliquam quasi minima quod explicabo libero odit atque non aspernatur veritatis? Cumque vel nostrum consequatur alias, eaque est quibusdam voluptatem corrupti dolor ipsum illo!
+          </div>
 </body>
 </html>
