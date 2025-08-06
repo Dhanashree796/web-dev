@@ -1,49 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>CSS variables</title>
-          <style>
-                    :root{
-                      --color:blue;
-                      --seccolor:rgb(161, 161, 237);
-                      --defpad:23px
-                    }
-                    *{
-                              margin: 0;
-                              padding: 0;
-                    }
-             .nav{
-                    background-color: var(--color);
-             }
-             ul{
-                    display: flex;
-             }
-             ul li{
-                    list-style: none;
-                    padding: var(--defpad);
-                    border: 4px solid var(--seccolor);
-             }
-             ul li:first-child{
-                    background-color: blueviolet;
-             }
-             .container{
-                    background-color:var(--seccolor);
-             }
-             
-          </style>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Card Design</title>
+      <style>
+            *{
+                  margin: 0;
+                  padding: 0;
+            }
+            body{
+                  background-color: gray;
+                  padding: 45px;
+            }
+            .card {
+                  background-color: white;
+                  width: 198px;
+                  height: 344px;
+                  border-radius: 7px;
+            }
+            .image{
+                  padding: 3px;
+                  
+            }
+            .image img{
+                  border-radius: 7px;
+            }
+            .content{
+                  padding: 13px;
+            }
+            .content p{
+                  font-size: 13px;
+                  color: gray;
+                  font: ;
+            }
+            .capsules{
+                  padding: 0 34px;
+            }
+            .capsules span{
+                  border: 2px solid rgb(114, 108, 108);
+                  padding: 4px 4px;
+                  border-radius: 8px;
+                  font-size: 12px;
+                  font-family: 'Baloo bhai 2';
+            }
+      </style>
 </head>
+
 <body>
-          <div>
-                <ul class="nav">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-          </div>
-          <div class="container">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officiis veniam dicta ullam ratione placeat fuga nesciunt accusantium nulla delectus itaque aliquam quasi minima quod explicabo libero odit atque non aspernatur veritatis? Cumque vel nostrum consequatur alias, eaque est quibusdam voluptatem corrupti dolor ipsum illo!
-          </div>
+      <div class="card">
+            <div class="image">
+                  <img width="188px" src="https://images.pexels.com/photos/13986574/pexels-photo-13986574.jpeg" alt="img">
+      
+            </div>
+            <div class="capsules">
+                  <span>Nature</span>
+                  <span>Lake</span>
+            </div>
+            <div class="content"> 
+                  <h2>Dhanu</h2>
+                  <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quae excepturi nobis quis adipisci veritatis magni quibusdam quo, harum enim consequuntur qui deleniti.
+                  </p>
+            </div>
+
+
+            </div>
+     
+      
 </body>
+
 </html>
